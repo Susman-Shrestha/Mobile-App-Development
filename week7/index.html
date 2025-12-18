@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BookDestinations</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- LOGIN PAGE -->
+<div id="page-login" class="page" style="display: block;">
+  <div class="auth-container">
+    <h1>Login</h1>
+    <input id="loginEmail" type="email" placeholder="Email">
+    <input id="loginPassword" type="password" placeholder="Password">
+    <button id="loginBtn">Login</button>
+    <p>Don't have an account? <span id="goSignup" class="link">Sign Up</span></p>
+  </div>
+</div>
+
+<!-- SIGNUP PAGE -->
+<div id="page-signup" class="page" style="display: none;">
+  <div class="auth-container">
+    <h1>Sign Up</h1>
+    <input id="signupEmail" type="email" placeholder="Email">
+    <input id="signupPassword" type="password" placeholder="Password">
+    <button id="signupBtn">Sign Up</button>
+    <p>Already have an account? <span id="goLogin" class="link">Login</span></p>
+  </div>
+</div>
+
+<!-- MY TRIPS PAGE -->
+<div id="page-trips" class="page" style="display: none;">
+  <header class="hero">
+    <h1>My Trips</h1>
+    <button id="logoutBtn">Logout</button>
+  </header>
+
+  <main class="container">
+    <section class="glass">
+      <h2>Add Destination</h2>
+      <input id="name" placeholder="Destination">
+      <input id="country" placeholder="Country">
+      <input id="cost" type="number" placeholder="Budget ($)">
+      <button id="addBtn">Add Trip</button>
+    </section>
+
+    <section class="glass">
+      <h2>Your Trips</h2>
+      <div id="destinationList"></div>
+    </section>
+  </main>
+</div>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
